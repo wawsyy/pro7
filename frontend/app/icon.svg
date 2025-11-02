@@ -1,0 +1,28 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="64" fill="url(#paint0_linear)" />
+  <g filter="url(#paint1_dropShadow)">
+    <path
+      d="M128 58C90.594 58 60 88.594 60 126C60 163.406 90.594 194 128 194C165.406 194 196 163.406 196 126C196 88.594 165.406 58 128 58ZM128 82C152.957 82 173 102.043 173 127C173 151.957 152.957 172 128 172C103.043 172 83 151.957 83 127C83 102.043 103.043 82 128 82Z"
+      fill="white"
+      fill-opacity="0.92"
+    />
+    <path
+      d="M120.5 111.5L101 150H119.5L136 117L151 150H170L150.5 111.5C145 100.5 119.5 100.5 120.5 111.5Z"
+      fill="#0f172a"
+      fill-opacity="0.92"
+    />
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear" x1="34" y1="34" x2="228" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8" />
+      <stop offset="1" stop-color="#6366f1" />
+    </linearGradient>
+    <filter id="paint1_dropShadow" x="40" y="38" width="176" height="176" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="8" />
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape" />
+    </filter>
+  </defs>
+</svg>
+
