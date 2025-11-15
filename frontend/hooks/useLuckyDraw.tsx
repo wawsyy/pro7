@@ -328,17 +328,23 @@ export const useLuckyDraw = (parameters: {
       );
 
       if (winnerIndexHandle) {
-        setWinnerIndexClear({
-          handle: winnerIndexHandle,
-          clear: decrypted[winnerIndexHandle],
-        });
+        const decryptedIndex = decrypted[winnerIndexHandle];
+        if (typeof decryptedIndex === "string" || typeof decryptedIndex === "bigint") {
+          setWinnerIndexClear({
+            handle: winnerIndexHandle,
+            clear: decryptedIndex,
+          });
+        }
       }
 
       if (winnerNameHandle) {
-        setWinnerNameClear({
-          handle: winnerNameHandle,
-          clear: decrypted[winnerNameHandle],
-        });
+        const decryptedName = decrypted[winnerNameHandle];
+        if (typeof decryptedName === "string" || typeof decryptedName === "bigint") {
+          setWinnerNameClear({
+            handle: winnerNameHandle,
+            clear: decryptedName,
+          });
+        }
       }
 
       setMessage("Winner data decrypted successfully.");
