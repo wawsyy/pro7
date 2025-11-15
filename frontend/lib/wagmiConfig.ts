@@ -1,5 +1,5 @@
 import { createConfig, http } from "wagmi";
-import type { Chain } from "wagmi";
+import type { Chain } from "viem/chains";
 import { hardhat, sepolia } from "wagmi/chains";
 import { injected } from "wagmi/connectors";
 
