@@ -1,10 +1,11 @@
 import { createConfig, http } from "wagmi";
+import type { Chain } from "wagmi";
 import { hardhat, sepolia } from "wagmi/chains";
 import { injected } from "wagmi/connectors";
 
-const chains = [hardhat, sepolia];
+const chains = [hardhat, sepolia] as const satisfies readonly [Chain, ...Chain[]];
 
-const transports = {
+const transports: Record<number, ReturnType<typeof http>> = {
   [hardhat.id]: http("http://127.0.0.1:8545"),
   [sepolia.id]: http(
     process.env.NEXT_PUBLIC_SEPOLIA_RPC ??
